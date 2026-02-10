@@ -15,6 +15,10 @@ export class AppController {
     return 'Ok';
   }
 
+  @Get('cells')
+  getcells() {
+    return this.appService.getCells();
+  }
   @Post()
   postHello(): string {
     return this.appService.postHello();
